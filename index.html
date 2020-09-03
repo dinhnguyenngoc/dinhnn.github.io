@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        
+        // global (toàn cục)
+        var name = "Kien";
+
+        for(i=0; i<=10; i++) {
+            // local (cục bộ)
+            let name = "Dinh";
+        }
+
+        console.log(name);
+
+    </script>
+
+</head>
+<body>
+    
+    <input id="name" value="kasdf" type="text">
+    <button id="btn" onclick="myFunction()">Click me</button>
+
+
+    <script>
+        // Javascript here
+
+        document.getElementById("name").value = "Kien";
+
+        function myFunction() {
+            alert("You clicked me!");
+        }
+
+    </script>
+</body>
+</html>
